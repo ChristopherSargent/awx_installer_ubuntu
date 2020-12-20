@@ -6,6 +6,7 @@
 #tasksel install ubuntu-mate-core
 #systemctl enable lightdm && systemctl start lightdm
 
+# Add time date stamp to prompt and history
 echo "export PROMPT_COMMAND='echo -n \[\$(date +%F-%T)\]\ '" >> /root/.bashrc
 echo "export HISTTIMEFORMAT='%F-%T '" >> /root/.bashrc
 source /root/.bashrc
